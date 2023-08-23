@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5cbc10dd8b.js" crossorigin="anonymous"></script>
+    <style>
+        textarea {
+            /* text-decoration: ; */
+            /* text-transform:capitalize; */
+            /* text-transform:none; */
+            /* text-transform: uppercase; */
+            /* list-style:; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="max-w-screen-xl mx-auto bg-sky-300  px-32 py-5">
+        <h1 class="text-4xl text-center font-semibold">MY text Editor</h1>
+        <div class="bg-sky-200   m-4 px-4 ">
+            <div class="flex justify-between items-center py-8">
+                <div class="flex gap-5 w-1/3">
+                    <i id="bold" class="fa-solid fa-bold p-3 hover:bg-slate-200"></i>
+                    <i id="italic" class="fa-solid fa-italic p-3 hover:bg-slate-200"></i>
+                    <i id="underline" class="fa-solid fa-underline p-3 hover:bg-slate-200"></i>
+                </div>
+                <div class="flex gap-5 w-1/3 justify-center ">
+                    <i id="align-left" class="fa-solid fa-align-left p-3 hover:bg-slate-200"></i>
+                    <i id="align-center" class="fa-solid fa-align-center p-3 hover:bg-slate-200"></i>
+                    <i id="align-right" class="fa-solid fa-align-right p-3 hover:bg-slate-200"></i>
+                    <i id="align-justify" class="fa-solid fa-align-justify p-3 hover:bg-slate-200"></i>
+                </div>
+                <div class="flex gap-5 w-1/3  justify-end items-center">
+                    <input id="font-size" type="number" name="" value="16"
+                        class="w-12 py-3 -mr-5 bg-transparent  hover:bg-slate-200" id="font-size">
+                    <span class="p-3 hover:bg-slate-200" id="case">aA</span>
+                    <input class=" hover:bg-slate-200" id="color" type="color" name="" value="#000000" id="color">
+                </div>
+
+            </div>
+            <hr class="bg-black  h-1">
+
+            <textarea name=""  id="text-area"class="w-full outline-none    resize-none h-96"></textarea>
+        </div>
+    </main>
+    <script src="editor.js"></script>
+
+
+
+</body>
+
+</html>
